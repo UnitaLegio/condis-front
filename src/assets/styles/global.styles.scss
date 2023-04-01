@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/*
+---------------------------------------------
+Application constants
+---------------------------------------------
+*/
+$BACKGROUND_COLOR: #28353B;
+$BACKGROUND_VARIANT_DARKER: #0F1E2280;
+$BACKGROUND_ELEMENTS_COLOR: #FFF;
+$PRIMARY_COLOR: #FE6152;
+$ACCENT_COLOR: #F99;
+$DEFAULT_TEXT_COLOR: #FFF;
+$HEADER_TEXT_COLOR: #FFF;
+$INACTIVE_ELEMENT: #666;
+
+$a1: #5D6C70;
+$a2: #D4D4D4;
+$a3: #F8F8F8;
+$a4: #3E8CC7;
+
+$b1: #0F1E22;
+$b2: #B8B8B8;
+$b3: #F0F0F0;
+$b4: #3E8CC7;
+$b5: #F2A30F;
+$b6: #F2A30F;
+
+/*
+---------------------------------------------
+reset
+---------------------------------------------
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: $BACKGROUND-COLOR;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: $DEFAULT_TEXT_COLOR;
+    text-decoration: none !important;
+}
+p a {
+    text-decoration: underline;
+}
+a:hover {
+    color: $ACCENT_COLOR;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $HEADER_TEXT_COLOR;
+    font-weight: 700;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 30px;
+    color: $DEFAULT_TEXT_COLOR;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*
+---------------------------------------------
+Global Styles
+---------------------------------------------
+*/
+.logo-styled-text {
+    font-family: 'Black Ops One', cursive;
+}
+html,
+body {
+    background: $BACKGROUND_COLOR;
+    font-family: 'Poppins', sans-serif;
+}
+
+body .page-content {
+    margin-top: 110px;
+    background-color: #27292a;
+    padding: 60px;
+    border-radius: 23px;
+}
+
+p {
+    font-size: 15px;
+    color: $DEFAULT_TEXT_COLOR;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+::selection {
+    background: $PRIMARY_COLOR;
+    color: $BACKGROUND_ELEMENTS_COLOR;
+}
+
+::-moz-selection {
+    background: $PRIMARY_COLOR;
+    color: $BACKGROUND_ELEMENTS_COLOR;
+}
+
+.templatemo-item {
+    max-width: 80px;
+    border-radius: 23px;
+}
+
+.main-button a {
+    font-size: 14px;
+    color: $BACKGROUND_ELEMENTS_COLOR;
+    background-color: $PRIMARY_COLOR;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-button a:hover {
+    background-color: $BACKGROUND_ELEMENTS_COLOR;
+    color: $PRIMARY_COLOR;
+}
+
+.main-border-button a {
+    font-size: 14px;
+    color: $PRIMARY_COLOR;
+    background-color: transparent;
+    border: 1px solid $PRIMARY_COLOR;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-border-button a:hover {
+    border-color: $BACKGROUND_ELEMENTS_COLOR;
+    background-color: $BACKGROUND_ELEMENTS_COLOR;
+    color: $PRIMARY_COLOR
+}
+
+.border-no-active a {
+    border-color: $INACTIVE_ELEMENT;
+    color: $INACTIVE_ELEMENT;
+}
+
+.border-no-active a:hover{
+    border-color: $INACTIVE_ELEMENT;
+    color: $INACTIVE_ELEMENT;
+    background-color: transparent;
+}
+
+section {
+    margin-top: 120px;
+}
+
+.heading-section h4 {
+    color: $PRIMARY_COLOR;
+    font-size: 34px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.heading-section h4 em {
+    color: $HEADER_TEXT_COLOR;
+    font-style: normal;
+    text-decoration: underline;
+}

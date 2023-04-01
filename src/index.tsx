@@ -1,19 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import {store, persistor} from "./redux/store";
+import {PersistGate} from "redux-persist/integration/react";
+import './index.css';
+import './assets/styles/global.styles.scss';
+import App from './App';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    document.getElementById('root') as HTMLElement
 );
 
-// If you want to start measuring performance in your app, pass a function
+root.render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <BrowserRouter>
+{/*                <PersistGate
+                    loading={<div>Loading...ChangeMe</div>}
+                    persistor={persistor}>*/}
+                    <App/>
+                {/*</PersistGate>*/}
+            </BrowserRouter>
+        </Provider>
+    </React.StrictMode>
+);
 // to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
