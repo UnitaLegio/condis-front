@@ -1,18 +1,19 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-/*
+!*
 ---------------------------------------------
 Application constants
 ---------------------------------------------
-*/
-$BACKGROUND_COLOR: #28353B;
+*!
+!*$BACKGROUND_COLOR: #28353B;
 $BACKGROUND_VARIANT_DARKER: #0F1E2280;
 $BACKGROUND_ELEMENTS_COLOR: #FFF;
 $PRIMARY_COLOR: #FE6152;
 $ACCENT_COLOR: #F99;
 $DEFAULT_TEXT_COLOR: #FFF;
 $HEADER_TEXT_COLOR: #FFF;
-$INACTIVE_ELEMENT: #666;
+$INACTIVE_ELEMENT: #666;*!
 
 $a1: #5D6C70;
 $a2: #D4D4D4;
@@ -26,11 +27,11 @@ $b4: #3E8CC7;
 $b5: #F2A30F;
 $b6: #F2A30F;
 
-/*
+!*
 ---------------------------------------------
 reset
 ---------------------------------------------
-*/
+*!
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -119,11 +120,11 @@ img {
     overflow: hidden;
 }
 
-/*
+!*
 ---------------------------------------------
 Global Styles
 ---------------------------------------------
-*/
+*!
 .logo-styled-text {
     font-family: 'Black Ops One', cursive;
 }
@@ -230,4 +231,4 @@ section {
     color: $HEADER_TEXT_COLOR;
     font-style: normal;
     text-decoration: underline;
-}
+}*/

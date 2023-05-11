@@ -1,0 +1,113 @@
+/*
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+// Colors
+$BACKGROUND_COLOR: #28353B;
+$BACKGROUND_VARIANT_DARKER: #0F1E2280;
+$BACKGROUND_ELEMENTS_COLOR: #FFF;
+$PRIMARY_COLOR: #FE6152;
+$ACCENT_COLOR: #F99;
+$DEFAULT_TEXT_COLOR: #FFF;
+$HEADER_TEXT_COLOR: #FFF;
+$INACTIVE_ELEMENT: #666;
+
+// Bootstrap overrides
+$primary: $PRIMARY_COLOR;
+$secondary: $BACKGROUND_COLOR;
+$success: $ACCENT_COLOR;
+$info: $ACCENT_COLOR;
+$warning: $ACCENT_COLOR;
+$danger: $ACCENT_COLOR;
+$light: $BACKGROUND_ELEMENTS_COLOR;
+$dark: $BACKGROUND_COLOR;
+
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom styles
+   body {
+     background-color: $BACKGROUND_COLOR;
+   }
+
+h1, h2, h3, h4, h5, h6 {
+  color: $HEADER_TEXT_COLOR;
+}
+
+p, span {
+  color: $DEFAULT_TEXT_COLOR;
+}
+
+.card {
+  background-color: $BACKGROUND_VARIANT_DARKER;
+  color: $DEFAULT_TEXT_COLOR;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+.card-body {
+  padding: 2rem;
+}
+}
+
+.card-title {
+  color: $PRIMARY_COLOR;
+}
+
+.card-subtitle {
+  color: $ACCENT_COLOR;
+}
+
+.team-member {
+.card {
+.card-title {
+  color: $DEFAULT_TEXT_COLOR;
+}
+
+.card-subtitle {
+  color: $INACTIVE_ELEMENT;
+}
+}
+}
+
+
+
